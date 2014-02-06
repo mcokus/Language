@@ -280,6 +280,64 @@
                                                 <xsd:documentation>Has the actual others exec permission changed from the expected others exec permission?</xsd:documentation>
                                           </xsd:annotation>
                                     </xsd:element>
+                                    <xsd:element name="user_differs" type="oval-def:EntityStateBoolType" minOccurs="0" maxOccurs="1">
+                                          <xsd:annotation>
+                                                <xsd:documentation>Has the actual user changed from the expected user?</xsd:documentation>
+                                          </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element minOccurs="0" maxOccurs="1" name="actual_user"
+                                          type="oval-def:EntityStateIntType">
+                                          <xsd:annotation>
+                                                <xsd:documentation>The actual user of the file/directory.</xsd:documentation>
+                                          </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element name="expected_user"
+                                          type="oval-def:EntityStateIntType" minOccurs="0"
+                                          maxOccurs="1">
+                                          <xsd:annotation>
+                                                <xsd:documentation>The expected user of the file/directory.</xsd:documentation>
+                                          </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element name="group_differs"
+                                          type="oval-def:EntityStateBoolType" minOccurs="0"
+                                          maxOccurs="1">
+                                          <xsd:annotation>
+                                                <xsd:documentation>Has the actual group changed from the expected group?</xsd:documentation>
+                                          </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element minOccurs="0" maxOccurs="1" name="actual_group"
+                                          type="oval-def:EntityStateIntType">
+                                          <xsd:annotation>
+                                                <xsd:documentation>The actual group of the file/directory.</xsd:documentation>
+                                          </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element name="expected_group"
+                                          type="oval-def:EntityStateIntType" minOccurs="0"
+                                          maxOccurs="1">
+                                          <xsd:annotation>
+                                                <xsd:documentation>The expected group of the file/directory.</xsd:documentation>
+                                          </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element name="symlink_differs"
+                                          type="oval-def:EntityStateBoolType" minOccurs="0"
+                                          maxOccurs="1">
+                                          <xsd:annotation>
+                                                <xsd:documentation>Has the actual symlink changed from the expected symlink?</xsd:documentation>
+                                          </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element minOccurs="0" maxOccurs="1" name="actual_symlink"
+                                          type="oval-def:EntityStateStringType">
+                                          <xsd:annotation>
+                                                <xsd:documentation>The actual symlink of the file/directory.</xsd:documentation>
+                                          </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element name="expected_symlink"
+                                          type="oval-def:EntityStateStringType" minOccurs="0"
+                                          maxOccurs="1">
+                                          <xsd:annotation>
+                                                <xsd:documentation>The expected symlink of the file/directory.</xsd:documentation>
+                                          </xsd:annotation>
+                                    </xsd:element>
                               </xsd:sequence>
                         </xsd:extension>
                   </xsd:complexContent>

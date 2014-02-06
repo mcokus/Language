@@ -132,6 +132,60 @@
                                         <xsd:documentation>Has the actual others exec permission changed from the expected others exec permission?</xsd:documentation>
                                    </xsd:annotation>
                               </xsd:element>
+                              <xsd:element name="user_differs" type="oval-sc:EntityItemBoolType"
+                                   minOccurs="0" maxOccurs="1">
+                                   <xsd:annotation>
+                                        <xsd:documentation>Has the actual user changed from the expected user?</xsd:documentation>
+                                   </xsd:annotation>
+                              </xsd:element>
+                              <xsd:element minOccurs="0" maxOccurs="1" name="actual_user"
+                                   type="oval-sc:EntityItemIntType">
+                                   <xsd:annotation>
+                                        <xsd:documentation>The actual user of the file/directory.</xsd:documentation>
+                                   </xsd:annotation>
+                              </xsd:element>
+                              <xsd:element name="expected_user" type="oval-sc:EntityItemIntType"
+                                   minOccurs="0" maxOccurs="1">
+                                   <xsd:annotation>
+                                        <xsd:documentation>The expected user of the file/directory.</xsd:documentation>
+                                   </xsd:annotation>
+                              </xsd:element>
+                              <xsd:element name="group_differs" type="oval-sc:EntityItemBoolType"
+                                   minOccurs="0" maxOccurs="1">
+                                   <xsd:annotation>
+                                        <xsd:documentation>Has the actual group changed from the expected group?</xsd:documentation>
+                                   </xsd:annotation>
+                              </xsd:element>
+                              <xsd:element minOccurs="0" maxOccurs="1" name="actual_group"
+                                   type="oval-sc:EntityItemIntType">
+                                   <xsd:annotation>
+                                        <xsd:documentation>The actual group of the file/directory.</xsd:documentation>
+                                   </xsd:annotation>
+                              </xsd:element>
+                              <xsd:element name="expected_group" type="oval-sc:EntityItemIntType"
+                                   minOccurs="0" maxOccurs="1">
+                                   <xsd:annotation>
+                                        <xsd:documentation>The expected group of the file/directory.</xsd:documentation>
+                                   </xsd:annotation>
+                              </xsd:element>
+                              <xsd:element name="symlink_differs" type="oval-sc:EntityItemBoolType"
+                                   minOccurs="0" maxOccurs="1">
+                                   <xsd:annotation>
+                                        <xsd:documentation>Has the actual symlink changed from the expected symlink?</xsd:documentation>
+                                   </xsd:annotation>
+                              </xsd:element>
+                              <xsd:element minOccurs="0" maxOccurs="1" name="actual_symlink"
+                                   type="oval-sc:EntityItemStringType">
+                                   <xsd:annotation>
+                                        <xsd:documentation>The actual symlink of the file/directory.</xsd:documentation>
+                                   </xsd:annotation>
+                              </xsd:element>
+                              <xsd:element name="expected_symlink"
+                                   type="oval-sc:EntityItemStringType" minOccurs="0" maxOccurs="1">
+                                   <xsd:annotation>
+                                        <xsd:documentation>The expected symlink of the file/directory.</xsd:documentation>
+                                   </xsd:annotation>
+                              </xsd:element>
                          </xsd:sequence>
                     </xsd:extension>
                </xsd:complexContent>
